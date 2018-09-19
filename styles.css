@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Rubik');
+th, td {
+    padding: 0px;
+}
+h1 {
+    
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+h2 {
+    
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+h3 {
+    
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+h4 {
+    
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+h5 {
+    
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+h6 {
+    
+    font-family: 'Rubik', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+p {
+    
+    font-family: 'Oxygen', sans-serif;
+    color: #444444;
+    text-align: center;
+    
+}
+.lighttext {
+    
+    color: #eeeeee;
+    
+}
+.colorblock {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto auto;
+}
+#jhs0 {
+    background-color: #F0F0F0;
+}
+#jhs1 {
+    background-color: #1A1A1A;
+}
+#jhs2 {
+    background-color: #999999;
+}
+#jhs3 {
+    background-color: #1F1F1F;
+}
+#jhs4 {
+    background-color: #111111;
+}
+#jus0 {
+    background-color: #E0E3E7;
+}
+#jus1 {
+    background-color: #C2C8D1;
+}
+#jus2 {
+    background-color: #8693A4;
+}
+#jus3 {
+    background-color: #283F50;
+}
+#jus4 {
+    background-color: #142028;
+}
+#ptm0 {
+    background-color: #009245;
+}
+#ptm1 {
+    background-color: #007130;
+}
+#ptm2 {
+    background-color: #D00000;
+}
+#ptm3 {
+    background-color: #e6e6e6;
+}
+#ptm4 {
+    background-color: #222;
+}
