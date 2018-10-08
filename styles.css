@@ -275,6 +275,23 @@ p {
     background-color: #111111;
 }
 
+/* Pinetree Apps */
+#pta0 {
+    background-color: #009245;
+}
+#pta1 {
+    background-color: #007130;
+}
+#pta2 {
+    background-color: #D00000;
+}
+#pta3 {
+    background-color: #e6e6e6;
+}
+#pta4 {
+    background-color: #222;
+}
+
 /* Jusanov */
 #jus0 {
     background-color: #E0E3E7;
@@ -290,21 +307,4 @@ p {
 }
 #jus4 {
     background-color: #142028;
-}
-
-/* PinetreeMail */
-#ptm0 {
-    background-color: #009245;
-}
-#ptm1 {
-    background-color: #007130;
-}
-#ptm2 {
-    background-color: #D00000;
-}
-#ptm3 {
-    background-color: #e6e6e6;
-}
-#ptm4 {
-    background-color: #222;
 }

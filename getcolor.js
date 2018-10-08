@@ -11,8 +11,8 @@ var colors = [
     "dgrey",
     "lgrey",
     "jhs",
-    "jus",
-    "ptm"
+    "ptm",
+    "jus"
 ];
 
 var hexDigits = new Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");
