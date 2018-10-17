@@ -11,7 +11,7 @@ var colors = [
     "dgrey",
     "lgrey",
     "jhs",
-    "ptm",
+    "pta",
     "jus"
 ];
 
