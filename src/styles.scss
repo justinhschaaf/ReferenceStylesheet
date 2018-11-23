@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* https://stackoverflow.com/questions/5445491/height-equal-to-dynamic-width-css-fluid-layout#6615994 */
+/*#container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+#dummy {
+  margin-top: 75%;
+}
+
+.colorbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: silver
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito|Rubik');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik', sans-serif;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f6f6f6;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16pt 16pt 0pt 16pt;
+}
+
+.title {
+  text-align: center;
+  font-size: 48pt;
+  color: #e6e6e6;
+}
+
+.heading-desc {
+  text-align: center;
+  font-size: 14pt;
+}
+
+.buttons {
+  margin: 10pt;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10pt;
+  background-color: #e6e6e6;
+  color: #f6f6f6;
+  font-weight: bold;
+  border: 0;
+  box-shadow: 0pt 2pt 5pt rgba(20, 20, 20, 0.4);
+}
+
+.swatch-header {
+  box-shadow: 0pt 2pt 5pt rgba(20, 20, 20, 0.4);
+  margin: 0;
+  padding: 3pt 10pt;
+  z-index: 1;
+}
+
+.swatch-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.swatch {
+  padding: 5pt;
+  height: 135pt;
+  width: 10%;
+  z-index: -1;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link {
+  width: 200pt;
+  padding: 5pt;
+  color: #e6e6e6;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}

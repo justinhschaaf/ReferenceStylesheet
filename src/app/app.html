@@ -1,0 +1,42 @@
+<div id="container">
+  <div class="header" ng-href="#header">
+    <img class="logo" src="../assets/logo.png" height="128" width="128">
+    <h1 class="title">Justin's Reference Stylesheet</h1>
+    <p class="heading-desc">This is simply a palette with a wide range of colors on it. Feel free to use any of them. A link back here would be appreciated 😊.</p>
+    <br>
+    <!--<div class="buttons">
+      <button id="aColorButton" ng-click="toggleAColors()">Show "A" Colors</button>
+    </div>
+    <br>-->
+  </div>
+  <div *ngFor="let color of colors; index as i">
+    <div class="swatch-header" [style.background-color]="color.A700">
+      <h1 [style.color]="color.contrast.A700">{{ color.metadata.title }}</h1>
+    </div>
+    <div class="swatch-row"> <!-- [ng-href]="#{{ color.metadata.title.replace(' ', '+') }}"-->
+      <div class="swatch" *ngFor="let type of colortypes" [style.background-color]="color[type]" [style.color]="color.contrast[type]">
+        <h3>{{ type.substring(1) }}</h3>
+        <p>{{ color[type] }}</p>
+        <p>{{ convertToRGB(color[type]) }}</p>
+        <p>{{ convertToCMYK(color[type]) }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer" ng-href="#footer">
+    <br>
+    <div class="links">
+      <div class="link">
+        <a href="https://www.github.com/justinhschaaf/ReferenceStylesheet" class="footer-link">Source</a>
+      </div>
+      <div class="link">
+        <a href="https://www.justinschaaf.com" class="footer-link">Main Site</a>
+      </div>
+      <div class="link">
+        <a href="https://liberapay.com/justinhschaaf" class="footer-link">Donate</a>
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
