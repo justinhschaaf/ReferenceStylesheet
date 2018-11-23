@@ -4,7 +4,7 @@ A reference stylesheet of the fonts and colors I used for my projects.
 # Donate
 If you like what I do, then please consider supporting me on Liberapay.
 
-[![Donate](https://liberapay.com/assets/widgets/donate.svg)](http://a.com) 
+[![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/justinhschaaf) 
 
 # Angular Reference
 
