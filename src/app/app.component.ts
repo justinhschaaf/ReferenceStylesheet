@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ReferenceStylesheet';
 
-  dark_primary_text = "#222";
-  light_primary_text = "#F6F6F6";
+  dark_primary_text = "#111";
+  light_primary_text = "#fff";
 
   colortypes: String[] = [
     "C50",
