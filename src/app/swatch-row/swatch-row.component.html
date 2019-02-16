@@ -1,0 +1,7 @@
+<div class="swatch-header" [style.background-color]="color.A700">
+  <h1 [style.color]="color.contrast.A700">{{ color.metadata.title }}</h1>
+</div>
+
+<div class="swatch-row">
+  <swatch *ngFor="let type of colortypes" [type]="type" [color]="color[type]" [contrast]="color.contrast[type]"></swatch>
+</div>
