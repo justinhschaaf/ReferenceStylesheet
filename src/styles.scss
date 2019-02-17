@@ -20,7 +20,8 @@
   background-color: silver
 }*/
 
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Overpass|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Overpass|Rubik|Merriweather');
+@import url('https://content.justinschaaf.com/common/fonts/fonts.css');
 
 * {
   margin: 0;
@@ -150,5 +151,14 @@ button {
 .pt {
   h3, p {
     font-family: 'Rubik', 'Segoe UI Emoji', sans-serif; 
+  }
+}
+
+.tv {
+  h3 {
+    font-family: 'Vanilla', 'Segoe UI Emoji', sans-serif;
+  }
+  p {
+    font-family: 'Merriweather', 'Segoe UI Emoji', sans-serif;
   }
 }
