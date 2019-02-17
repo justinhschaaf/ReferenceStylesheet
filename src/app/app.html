@@ -1,39 +1,61 @@
 
-<div class="header" ng-href="#header">
+<div class="header" id="header">
+
   <img class="logo" src="https://content.justinschaaf.com/common/logos/js-stylesheet512.png" height="128" width="128">
+
   <h1 class="title">Justin's Reference Stylesheet</h1>
-  <p class="heading-desc">This is a color palette with 300+ different colors. Feel free to use any of them. A link back here would be appreciated 😊.</p>
+  <p class="heading-desc">
+    This is a color palette with 300+ different colors and a few fonts from my various projects or
+    just colors that look nice. Feel free to use any of them. A link back here would be appreciated 😊.
+  </p>
+
   <br>
-  <!--<div class="buttons">
-    <button id="aColorButton" ng-click="toggleAColors()">Show "A" Colors</button>
-  </div>
-  <br>-->
+  
 </div>
 
 <router-outlet></router-outlet>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="ptcolors[0].C500" [style.color]="ptcolors[0].contrast.C500">Pinetree Colors</h2>
+  <h2 [style.background-color]="ptcolors[0].C500" [style.color]="ptcolors[0].contrast.C500">Pinetree</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
+
+        <h2>Font - Rubik</h2>
+  
+        <font-specimen class="pt"></font-specimen>
+  
+        <h2>Colors</h2>
+  
+        <br>
+  
       <swatch-row *ngFor="let ptcolor of ptcolors; index as i" [color]="ptcolor"></swatch-row>
     </div>
   </div>
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="jscolors[0].C500" [style.color]="jscolors[0].contrast.C500">Js Colors</h2>
+  <h2 [style.background-color]="jscolors[0].C500" [style.color]="jscolors[0].contrast.C500">Js</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
+
+      <h2>Fonts - Major Mono Display / Overpass</h2>
+
+      <font-specimen class="js"></font-specimen>
+
+      <h2>Colors</h2>
+
+      <br>
+
       <swatch-row *ngFor="let jscolor of jscolors; index as i" [color]="jscolor"></swatch-row>
+
     </div>
   </div>
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Retired Project Colors</h2>
+  <h2 [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Retired Projects</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -84,6 +106,10 @@
 
     <div class="link">
       <a href="https://www.github.com/justinhschaaf/ReferenceStylesheet" class="footer-link">Source</a>
+    </div>
+
+    <div class="link">
+      <a href="#header" class="footer-link">TOP</a>
     </div>
 
     <div class="link">

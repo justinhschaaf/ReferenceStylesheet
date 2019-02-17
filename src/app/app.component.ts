@@ -14,47 +14,6 @@ export class AppComponent {
   greycolors = greycolors;
   brightcolors = brightcolors;
   darkcolors = darkcolors;
-  aEnabled = false;
-
-  /*toggleAColors() {
-
-    if (this.aEnabled) {
-      this.colortypes = [
-        "C50",
-        "C100",
-        "C200",
-        "C300",
-        "C400",
-        "C500",
-        "C600",
-        "C700",
-        "C800",
-        "C900",
-      ];
-      this.aEnabled = false;
-      //document.getElementById('aColorButton').innerHTML = "Show \"A\" Colors";
-    } else {
-      this.colortypes = [
-        "C50",
-        "C100",
-        "C200",
-        "C300",
-        "C400",
-        "C500",
-        "C600",
-        "C700",
-        "C800",
-        "C900",
-        "A100",
-        "A200",
-        "A400",
-        "A700",
-      ];
-      this.aEnabled = true;
-      //document.getElementById('aColorButton').innerHTML = "Hide \"A\" Colors";
-    }
-
-  }*/
 
   constructor() {}
 

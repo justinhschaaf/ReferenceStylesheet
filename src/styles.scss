@@ -20,7 +20,7 @@
   background-color: silver
 }*/
 
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Overpass');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Overpass|Rubik');
 
 * {
   margin: 0;
@@ -136,7 +136,19 @@ button {
 }
 
 .spoilerbutton[value="Hide"] + .spoiler {
+
   padding: 8pt;
+
+  h2 {
+    width: 90%;
+  }
+
 }
 
 // End Spoiler
+
+.pt {
+  h3, p {
+    font-family: 'Rubik', 'Segoe UI Emoji', sans-serif; 
+  }
+}
