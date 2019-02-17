@@ -1,8 +1,8 @@
 
 <div class="header" ng-href="#header">
-  <img class="logo" src="https://content.justinschaaf.com/common/logos/js-stylesheet.svg" height="128" width="128">
+  <img class="logo" src="https://content.justinschaaf.com/common/logos/js-stylesheet512.png" height="128" width="128">
   <h1 class="title">Justin's Reference Stylesheet</h1>
-  <p class="heading-desc">This is simply a palette with a wide range of colors on it. Feel free to use any of them. A link back here would be appreciated 😊.</p>
+  <p class="heading-desc">This is a color palette with 300+ different colors. Feel free to use any of them. A link back here would be appreciated 😊.</p>
   <br>
   <!--<div class="buttons">
     <button id="aColorButton" ng-click="toggleAColors()">Show "A" Colors</button>
@@ -23,7 +23,17 @@
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Other Project Colors</h2>
+  <h2 [style.background-color]="jscolors[0].C500" [style.color]="jscolors[0].contrast.C500">Js Colors</h2>
+  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
+  <div class="spoiler">
+    <div>
+      <swatch-row *ngFor="let jscolor of jscolors; index as i" [color]="jscolor"></swatch-row>
+    </div>
+  </div>
+</div>
+
+<div class="spoiler_container">
+  <h2 [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Retired Project Colors</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -32,20 +42,60 @@
   </div>
 </div>
 
-<swatch-row *ngFor="let color of colors; index as i" [color]="color"></swatch-row>
+<div class="spoiler_container">
+  <h2 [style.background-color]="greycolors[0].C500" [style.color]="greycolors[0].contrast.C500">Greyscale Colors</h2>
+  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
+  <div class="spoiler">
+    <div>
+      <swatch-row *ngFor="let greycolor of greycolors; index as i" [color]="greycolor"></swatch-row>
+    </div>
+  </div>
+</div>
 
-<div class="footer" ng-href="#footer">
+<div class="spoiler_container">
+  <h2 [style.background-color]="brightcolors[0].C500" [style.color]="brightcolors[0].contrast.C500">Bright Colors</h2>
+  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
+  <div class="spoiler">
+    <div>
+      <swatch-row *ngFor="let brightcolor of brightcolors; index as i" [color]="brightcolor"></swatch-row>
+    </div>
+  </div>
+</div>
+
+<div class="spoiler_container">
+  <h2 [style.background-color]="darkcolors[0].C500" [style.color]="darkcolors[0].contrast.C500">Dark Colors</h2>
+  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
+  <div class="spoiler">
+    <div>
+      <swatch-row *ngFor="let darkcolor of darkcolors; index as i" [color]="darkcolor"></swatch-row>
+    </div>
+  </div>
+</div>
+
+<div class="footer" id="footer">
+
   <br>
+
   <div class="links">
+    
+    <div class="link">
+      <a href="https://www.github.com/justinhschaaf/ColorFormatter" class="footer-link">Color Formatting Tool</a>
+    </div>
+
     <div class="link">
       <a href="https://www.github.com/justinhschaaf/ReferenceStylesheet" class="footer-link">Source</a>
     </div>
+
     <div class="link">
       <a href="https://justinschaaf.com" class="footer-link">Main Site</a>
     </div>
+
     <div class="link">
       <a href="https://liberapay.com/justinhschaaf" class="footer-link">Donate</a>
     </div>
+
   </div>
+
   <br>
+
 </div>

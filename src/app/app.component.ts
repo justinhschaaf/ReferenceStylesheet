@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { colors, ptcolors, othercolors } from './colorutil';
+import { ptcolors, jscolors, othercolors, greycolors, brightcolors, darkcolors } from './colorutil';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,12 @@ import { colors, ptcolors, othercolors } from './colorutil';
 })
 export class AppComponent {
 
-  colors = colors;
   ptcolors = ptcolors;
+  jscolors = jscolors;
   othercolors = othercolors;
+  greycolors = greycolors;
+  brightcolors = brightcolors;
+  darkcolors = darkcolors;
   aEnabled = false;
 
   /*toggleAColors() {

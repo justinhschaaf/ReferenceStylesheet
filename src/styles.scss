@@ -119,8 +119,9 @@ button {
 }
 
 .spoiler {
-  overflow:hidden;
+  overflow: hidden;
   background: #f2f2f2;
+  z-index: -1;
 }
 
 .spoiler > div {
@@ -131,7 +132,7 @@ button {
 }
 
 .spoilerbutton[value="Show"] + .spoiler > div {
-  margin-top:-100%;
+  margin-top: -1000%;
 }
 
 .spoilerbutton[value="Hide"] + .spoiler {
