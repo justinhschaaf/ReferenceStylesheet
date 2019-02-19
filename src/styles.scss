@@ -91,6 +91,11 @@ button {
   color: inherit;
 }
 
+.textbanner {
+  padding: 5pt 5%;
+  text-align: center;
+}
+
 .spoiler_container {
 
   display: flex;
@@ -98,8 +103,6 @@ button {
 
   h2 {
     width: 60%;
-    padding: 5pt 5%;
-    text-align: center;
   }
 
   .spoilerbutton {
@@ -161,4 +164,8 @@ button {
   p {
     font-family: 'Merriweather', 'Segoe UI Emoji', sans-serif;
   }
+}
+
+.generator_container {
+  margin: 0 0 16pt 0;
 }

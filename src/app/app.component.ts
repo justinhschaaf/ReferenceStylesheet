@@ -1,5 +1,13 @@
 import { Component } from '@angular/core';
-import { ptcolors, jscolors, othercolors, greycolors, brightcolors, darkcolors } from './colorutil';
+import { 
+  ptcolors, 
+  jscolors, 
+  othercolors, 
+  greycolors, 
+  brightcolors, 
+  darkcolors, 
+  generator_default 
+} from './colorutil';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +22,7 @@ export class AppComponent {
   greycolors = greycolors;
   brightcolors = brightcolors;
   darkcolors = darkcolors;
+  generator_default = generator_default;
 
   constructor() {}
 

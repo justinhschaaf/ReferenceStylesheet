@@ -16,7 +16,7 @@
 <router-outlet></router-outlet>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="ptcolors[0].C500" [style.color]="ptcolors[0].contrast.C500">Pinetree</h2>
+  <h2 class="textbanner" [style.background-color]="ptcolors[0].C500" [style.color]="ptcolors[0].contrast.C500">Pinetree</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -35,7 +35,7 @@
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="jscolors[0].C500" [style.color]="jscolors[0].contrast.C500">Js</h2>
+  <h2 class="textbanner" [style.background-color]="jscolors[0].C500" [style.color]="jscolors[0].contrast.C500">Js</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -55,7 +55,7 @@
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Retired Projects</h2>
+  <h2 class="textbanner" [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Retired Projects</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -74,7 +74,7 @@
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="greycolors[0].C500" [style.color]="greycolors[0].contrast.C500">Greyscale Colors</h2>
+  <h2 class="textbanner" [style.background-color]="greycolors[0].C500" [style.color]="greycolors[0].contrast.C500">Greyscale Colors</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -84,7 +84,7 @@
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="brightcolors[0].C500" [style.color]="brightcolors[0].contrast.C500">Bright Colors</h2>
+  <h2 class="textbanner" [style.background-color]="brightcolors[0].C500" [style.color]="brightcolors[0].contrast.C500">Bright Colors</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
@@ -94,13 +94,21 @@
 </div>
 
 <div class="spoiler_container">
-  <h2 [style.background-color]="darkcolors[0].C500" [style.color]="darkcolors[0].contrast.C500">Dark Colors</h2>
+  <h2 class="textbanner" [style.background-color]="darkcolors[0].C500" [style.color]="darkcolors[0].contrast.C500">Dark Colors</h2>
   <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
   <div class="spoiler">
     <div>
       <swatch-row *ngFor="let darkcolor of darkcolors; index as i" [color]="darkcolor"></swatch-row>
     </div>
   </div>
+</div>
+
+<div class="generator_container">
+
+  <h2 class="textbanner" [style.background-color]="generator_default" style.color="#ffffff">Swatch Generator</h2>
+  
+  <app-generator></app-generator>
+  
 </div>
 
 <div class="footer" id="footer">

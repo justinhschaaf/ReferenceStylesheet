@@ -91,6 +91,7 @@ var AppComponent = /** @class */ (function () {
         this.greycolors = _colorutil__WEBPACK_IMPORTED_MODULE_1__["greycolors"];
         this.brightcolors = _colorutil__WEBPACK_IMPORTED_MODULE_1__["brightcolors"];
         this.darkcolors = _colorutil__WEBPACK_IMPORTED_MODULE_1__["darkcolors"];
+        this.generator_default = _colorutil__WEBPACK_IMPORTED_MODULE_1__["generator_default"];
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -114,7 +115,7 @@ var AppComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"header\" id=\"header\">\r\n\r\n  <img class=\"logo\" src=\"https://content.justinschaaf.com/common/logos/js-stylesheet512.png\" height=\"128\" width=\"128\">\r\n\r\n  <h1 class=\"title\">Justin's Reference Stylesheet</h1>\r\n  <p class=\"heading-desc\">\r\n    This is a color palette with 300+ different colors and a few fonts from my various projects or\r\n    just colors that look nice. Feel free to use any of them. A link back here would be appreciated 😊.\r\n  </p>\r\n\r\n  <br>\r\n  \r\n</div>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 [style.background-color]=\"ptcolors[0].C500\" [style.color]=\"ptcolors[0].contrast.C500\">Pinetree</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n\r\n        <h2>Font - Rubik</h2>\r\n  \r\n        <font-specimen class=\"pt\"></font-specimen>\r\n  \r\n        <h2>Colors</h2>\r\n  \r\n        <br>\r\n  \r\n      <swatch-row *ngFor=\"let ptcolor of ptcolors; index as i\" [color]=\"ptcolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 [style.background-color]=\"jscolors[0].C500\" [style.color]=\"jscolors[0].contrast.C500\">Js</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n\r\n      <h2>Fonts - Major Mono Display / Overpass</h2>\r\n\r\n      <font-specimen class=\"js\"></font-specimen>\r\n\r\n      <h2>Colors</h2>\r\n\r\n      <br>\r\n\r\n      <swatch-row *ngFor=\"let jscolor of jscolors; index as i\" [color]=\"jscolor\"></swatch-row>\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 [style.background-color]=\"othercolors[0].C500\" [style.color]=\"othercolors[0].contrast.C500\">Retired Projects</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n\r\n      <h2>TV Fonts - Vanilla / Merriweather</h2>\r\n\r\n      <font-specimen class=\"tv\"></font-specimen>\r\n\r\n      <h2>Colors</h2>\r\n\r\n      <br>\r\n      \r\n      <swatch-row *ngFor=\"let othercolor of othercolors; index as i\" [color]=\"othercolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 [style.background-color]=\"greycolors[0].C500\" [style.color]=\"greycolors[0].contrast.C500\">Greyscale Colors</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n      <swatch-row *ngFor=\"let greycolor of greycolors; index as i\" [color]=\"greycolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 [style.background-color]=\"brightcolors[0].C500\" [style.color]=\"brightcolors[0].contrast.C500\">Bright Colors</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n      <swatch-row *ngFor=\"let brightcolor of brightcolors; index as i\" [color]=\"brightcolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 [style.background-color]=\"darkcolors[0].C500\" [style.color]=\"darkcolors[0].contrast.C500\">Dark Colors</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n      <swatch-row *ngFor=\"let darkcolor of darkcolors; index as i\" [color]=\"darkcolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"footer\" id=\"footer\">\r\n\r\n  <br>\r\n\r\n  <div class=\"links\">\r\n    \r\n    <div class=\"link\">\r\n      <a href=\"https://www.github.com/justinhschaaf/ColorFormatter\" class=\"footer-link\">Color Formatting Tool</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"https://www.github.com/justinhschaaf/ReferenceStylesheet\" class=\"footer-link\">Source</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"#header\" class=\"footer-link\">TOP</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"https://justinschaaf.com\" class=\"footer-link\">Main Site</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"https://liberapay.com/justinhschaaf\" class=\"footer-link\">Donate</a>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <br>\r\n\r\n</div>\r\n"
+module.exports = "\r\n<div class=\"header\" id=\"header\">\r\n\r\n  <img class=\"logo\" src=\"https://content.justinschaaf.com/common/logos/js-stylesheet512.png\" height=\"128\" width=\"128\">\r\n\r\n  <h1 class=\"title\">Justin's Reference Stylesheet</h1>\r\n  <p class=\"heading-desc\">\r\n    This is a color palette with 300+ different colors and a few fonts from my various projects or\r\n    just colors that look nice. Feel free to use any of them. A link back here would be appreciated 😊.\r\n  </p>\r\n\r\n  <br>\r\n  \r\n</div>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 class=\"textbanner\" [style.background-color]=\"ptcolors[0].C500\" [style.color]=\"ptcolors[0].contrast.C500\">Pinetree</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n\r\n        <h2>Font - Rubik</h2>\r\n  \r\n        <font-specimen class=\"pt\"></font-specimen>\r\n  \r\n        <h2>Colors</h2>\r\n  \r\n        <br>\r\n  \r\n      <swatch-row *ngFor=\"let ptcolor of ptcolors; index as i\" [color]=\"ptcolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 class=\"textbanner\" [style.background-color]=\"jscolors[0].C500\" [style.color]=\"jscolors[0].contrast.C500\">Js</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n\r\n      <h2>Fonts - Major Mono Display / Overpass</h2>\r\n\r\n      <font-specimen class=\"js\"></font-specimen>\r\n\r\n      <h2>Colors</h2>\r\n\r\n      <br>\r\n\r\n      <swatch-row *ngFor=\"let jscolor of jscolors; index as i\" [color]=\"jscolor\"></swatch-row>\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 class=\"textbanner\" [style.background-color]=\"othercolors[0].C500\" [style.color]=\"othercolors[0].contrast.C500\">Retired Projects</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n\r\n      <h2>TV Fonts - Vanilla / Merriweather</h2>\r\n\r\n      <font-specimen class=\"tv\"></font-specimen>\r\n\r\n      <h2>Colors</h2>\r\n\r\n      <br>\r\n      \r\n      <swatch-row *ngFor=\"let othercolor of othercolors; index as i\" [color]=\"othercolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 class=\"textbanner\" [style.background-color]=\"greycolors[0].C500\" [style.color]=\"greycolors[0].contrast.C500\">Greyscale Colors</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n      <swatch-row *ngFor=\"let greycolor of greycolors; index as i\" [color]=\"greycolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 class=\"textbanner\" [style.background-color]=\"brightcolors[0].C500\" [style.color]=\"brightcolors[0].contrast.C500\">Bright Colors</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n      <swatch-row *ngFor=\"let brightcolor of brightcolors; index as i\" [color]=\"brightcolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"spoiler_container\">\r\n  <h2 class=\"textbanner\" [style.background-color]=\"darkcolors[0].C500\" [style.color]=\"darkcolors[0].contrast.C500\">Dark Colors</h2>\r\n  <input class=\"spoilerbutton\" type=\"button\" value=\"Show\" onclick=\"this.value=this.value=='Show'?'Hide':'Show';\">\r\n  <div class=\"spoiler\">\r\n    <div>\r\n      <swatch-row *ngFor=\"let darkcolor of darkcolors; index as i\" [color]=\"darkcolor\"></swatch-row>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"generator_container\">\r\n\r\n  <h2 class=\"textbanner\" [style.background-color]=\"generator_default\" style.color=\"#ffffff\">Swatch Generator</h2>\r\n  \r\n  <app-generator></app-generator>\r\n  \r\n</div>\r\n\r\n<div class=\"footer\" id=\"footer\">\r\n\r\n  <br>\r\n\r\n  <div class=\"links\">\r\n    \r\n    <div class=\"link\">\r\n      <a href=\"https://www.github.com/justinhschaaf/ColorFormatter\" class=\"footer-link\">Color Formatting Tool</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"https://www.github.com/justinhschaaf/ReferenceStylesheet\" class=\"footer-link\">Source</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"#header\" class=\"footer-link\">TOP</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"https://justinschaaf.com\" class=\"footer-link\">Main Site</a>\r\n    </div>\r\n\r\n    <div class=\"link\">\r\n      <a href=\"https://liberapay.com/justinhschaaf\" class=\"footer-link\">Donate</a>\r\n    </div>\r\n\r\n  </div>\r\n\r\n  <br>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -131,11 +132,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _swatch_swatch_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./swatch/swatch.component */ "./src/app/swatch/swatch.component.ts");
-/* harmony import */ var _swatch_row_swatch_row_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./swatch-row/swatch-row.component */ "./src/app/swatch-row/swatch-row.component.ts");
-/* harmony import */ var _font_specimen_font_specimen_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./font-specimen/font-specimen.component */ "./src/app/font-specimen/font-specimen.component.ts");
+/* harmony import */ var ngx_color_picker__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ngx-color-picker */ "./node_modules/ngx-color-picker/dist/ngx-color-picker.es5.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _swatch_swatch_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./swatch/swatch.component */ "./src/app/swatch/swatch.component.ts");
+/* harmony import */ var _swatch_row_swatch_row_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./swatch-row/swatch-row.component */ "./src/app/swatch-row/swatch-row.component.ts");
+/* harmony import */ var _font_specimen_font_specimen_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./font-specimen/font-specimen.component */ "./src/app/font-specimen/font-specimen.component.ts");
+/* harmony import */ var _generator_generator_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./generator/generator.component */ "./src/app/generator/generator.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -150,24 +153,28 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _swatch_swatch_component__WEBPACK_IMPORTED_MODULE_5__["SwatchComponent"],
-                _swatch_row_swatch_row_component__WEBPACK_IMPORTED_MODULE_6__["SwatchRowComponent"],
-                _font_specimen_font_specimen_component__WEBPACK_IMPORTED_MODULE_7__["FontSpecimenComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+                _swatch_swatch_component__WEBPACK_IMPORTED_MODULE_6__["SwatchComponent"],
+                _swatch_row_swatch_row_component__WEBPACK_IMPORTED_MODULE_7__["SwatchRowComponent"],
+                _font_specimen_font_specimen_component__WEBPACK_IMPORTED_MODULE_8__["FontSpecimenComponent"],
+                _generator_generator_component__WEBPACK_IMPORTED_MODULE_9__["GeneratorComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                ngx_color_picker__WEBPACK_IMPORTED_MODULE_3__["ColorPickerModule"],
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -192,12 +199,14 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*!******************************!*\
   !*** ./src/app/colorutil.ts ***!
   \******************************/
-/*! exports provided: colortypes, contrast_default, ptcolors, jscolors, othercolors, greycolors, brightcolors, darkcolors */
+/*! exports provided: colortypes, dark_primary_text, light_primary_text, contrast_default, ptcolors, jscolors, othercolors, greycolors, brightcolors, darkcolors, generator_default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colortypes", function() { return colortypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "dark_primary_text", function() { return dark_primary_text; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "light_primary_text", function() { return light_primary_text; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contrast_default", function() { return contrast_default; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ptcolors", function() { return ptcolors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jscolors", function() { return jscolors; });
@@ -205,6 +214,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "greycolors", function() { return greycolors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "brightcolors", function() { return brightcolors; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darkcolors", function() { return darkcolors; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "generator_default", function() { return generator_default; });
 var colortypes = [
     "C50",
     "C100",
@@ -963,239 +973,7 @@ var darkcolors = [
         contrast: contrast_default
     }
 ];
-/*
-export const colors: Array<Object> = [
-    {
-        metadata: {
-        title: "Red"
-        },
-        C50:  "#d59d9d",
-        C100: "#d08e8e",
-        C200: "#ca7d7d",
-        C300: "#c36969",
-        C400: "#bb5151",
-        C500: "#b13535",
-        C600: "#972d2d",
-        C700: "#802626",
-        C800: "#6d2020",
-        C900: "#5d1b1b",
-        A100: "#c44444",
-        A200: "#bb3c3c",
-        A400: "#a52d2d",
-        A700: "#982626",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Orange"
-        },
-        C50:  "#f8b586",
-        C100: "#f9aa73",
-        C200: "#fa9e5d",
-        C300: "#fb8f43",
-        C400: "#fd7e24",
-        C500: "#ff6a00",
-        C600: "#d95a00",
-        C700: "#b94d00",
-        C800: "#9d4200",
-        C900: "#863800",
-        A100: "#ff8800",
-        A200: "#ff7800",
-        A400: "#ff5a00",
-        A700: "#ff4d00",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Yellow"
-        },
-        C50:  "#f5d39f",
-        C100: "#f6ce91",
-        C200: "#f7c880",
-        C300: "#f8c16c",
-        C400: "#f9b955",
-        C500: "#faaf3a",
-        C600: "#d59531",
-        C700: "#b57f2a",
-        C800: "#9a6c24",
-        C900: "#835c1f",
-        A100: "#fcc34b",
-        A200: "#fbba42",
-        A400: "#f9a331",
-        A700: "#f8952a",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Light Blue"
-        },
-        C50:  "#bedef8",
-        C100: "#b5dbf9",
-        C200: "#aad7fa",
-        C300: "#9ed3fb",
-        C400: "#8fcefd",
-        C500: "#7ec8ff",
-        C600: "#6baad9",
-        C700: "#5b91b9",
-        C800: "#4d7b9d",
-        C900: "#426986",
-        A100: "#9ed5ff",
-        A200: "#8fcfff",
-        A400: "#6bc0ff",
-        A700: "#5bb7ff",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Blue"
-        },
-        C50:  "#a4acd5",
-        C100: "#97a0d0",
-        C200: "#8792ca",
-        C300: "#7581c3",
-        C400: "#5f6dbb",
-        C500: "#4656b1",
-        C600: "#3c4997",
-        C700: "#333e80",
-        C800: "#2b356d",
-        C900: "#252d5d",
-        A100: "#596ec4",
-        A200: "#4f61bb",
-        A400: "#3c49a5",
-        A700: "#333e98",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Purple"
-        },
-        C50:  "#b498c6",
-        C100: "#a989be",
-        C200: "#9c77b5",
-        C300: "#8d62ab",
-        C400: "#7b499f",
-        C500: "#662c91",
-        C600: "#57257b",
-        C700: "#4a1f69",
-        C800: "#3f1a59",
-        C900: "#36164c",
-        A100: "#8239ad",
-        A200: "#7332a0",
-        A400: "#572581",
-        A700: "#4a1f6e",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Magenta"
-        },
-        C50:  "#e38dae",
-        C100: "#e17ca2",
-        C200: "#de6894",
-        C300: "#db5084",
-        C400: "#d73471",
-        C500: "#d3135a",
-        C600: "#b4104d",
-        C700: "#990e42",
-        C800: "#820c38",
-        C900: "#6f0a30",
-        A100: "#de1873",
-        A200: "#d91566",
-        A400: "#cc104d",
-        A700: "#c40e42",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Pink"
-        },
-        C50:  "#f8bcd2",
-        C100: "#f9b3cc",
-        C200: "#faa8c6",
-        C300: "#fb9bbf",
-        C400: "#fd8cb6",
-        C500: "#ff7aac",
-        C600: "#d96892",
-        C700: "#b9597c",
-        C800: "#9d4c6a",
-        C900: "#86415a",
-        A100: "#ff9ac1",
-        A200: "#ff8ab7",
-        A400: "#ff68a0",
-        A700: "#ff5992",
-        contrast: contrast_default
-    },
-    {
-        metadata: {
-        title: "Dark Grey"
-        },
-        C50:  "#979797",
-        C100: "#878787",
-        C200: "#757575",
-        C300: "#5f5f5f",
-        C400: "#454545",
-        C500: "#272727",
-        C600: "#212121",
-        C700: "#1c1c1c",
-        C800: "#181818",
-        C900: "#141414",
-        A100: "#323232",
-        A200: "#2c2c2c",
-        A400: "#212121",
-        A700: "#1c1c1c",
-        contrast: {
-        C50:  light_primary_text,
-        C100: light_primary_text,
-        C200: light_primary_text,
-        C300: light_primary_text,
-        C400: light_primary_text,
-        C500: light_primary_text,
-        C600: light_primary_text,
-        C700: light_primary_text,
-        C800: light_primary_text,
-        C900: light_primary_text,
-        A100: light_primary_text,
-        A200: light_primary_text,
-        A400: light_primary_text,
-        A700: light_primary_text
-        }
-    },
-    {
-        metadata: {
-        title: "Light Grey"
-        },
-        C50:  "#dbdbdb",
-        C100: "#d7d7d7",
-        C200: "#d3d3d3",
-        C300: "#cecece",
-        C400: "#c8c8c8",
-        C500: "#c1c1c1",
-        C600: "#a4a4a4",
-        C700: "#8c8c8c",
-        C800: "#777777",
-        C900: "#656565",
-        A100: "#d0d0d0",
-        A200: "#c9c9c9",
-        A400: "#b8b8b8",
-        A700: "#adadad",
-        contrast: {
-        C50:  dark_primary_text,
-        C100: dark_primary_text,
-        C200: dark_primary_text,
-        C300: dark_primary_text,
-        C400: dark_primary_text,
-        C500: dark_primary_text,
-        C600: dark_primary_text,
-        C700: dark_primary_text,
-        C800: dark_primary_text,
-        C900: dark_primary_text,
-        A100: dark_primary_text,
-        A200: dark_primary_text,
-        A400: dark_primary_text,
-        A700: dark_primary_text,
-        }
-    }
-];*/
+var generator_default = "#63BF80";
 
 
 /***/ }),
@@ -1224,6 +1002,15 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 var ConvertService = /** @class */ (function () {
     function ConvertService() {
     }
+    // Credit to http://www.javascripter.net/faq/rgbtohex.htm
+    ConvertService.prototype.convertToHex = function (n) {
+        n = parseInt(n, 10);
+        if (isNaN(n))
+            return "00";
+        n = Math.max(0, Math.min(n, 255));
+        return "0123456789ABCDEF".charAt((n - n % 16) / 16)
+            + "0123456789ABCDEF".charAt(n % 16);
+    };
     // Credit to http://www.javascripter.net/faq/hextorgb.htm
     ConvertService.prototype.convertToRGB = function (hex) {
         var h = (hex.charAt(0) == "#") ? hex.substring(1, 7) : hex;
@@ -1337,6 +1124,186 @@ var FontSpecimenComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], FontSpecimenComponent);
     return FontSpecimenComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/generator/generator.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/generator/generator.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"generator\">\n  <span \n    [style.background]=\"color\"\n    [cpToggle]=\"true\"\n    [cpDialogDisplay]=\"'inline'\"\n    [cpCancelButton]=\"true\"\n    [cpAlphaChannel]=\"'disabled'\"\n    (colorPickerChange)=\"onColorPickerChange($event)\"\n    [(colorPicker)]=\"color\"></span>\n  <swatch-row [color]=\"colorObject\"></swatch-row>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/generator/generator.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/generator/generator.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".generator {\n  display: flex;\n  width: 100%;\n  padding: 10pt; }\n\nswatch-row {\n  margin: auto;\n  width: 85%; }\n\ncolor-picker {\n  margin: 0 auto;\n  z-index: 1; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZ2VuZXJhdG9yL0M6XFxVc2Vyc1xcanVzdGlcXFByb2dyYW1taW5nXFxjb2xvcnMuanVzdGluc2NoYWFmLmNvbS9zcmNcXGFwcFxcZ2VuZXJhdG9yXFxnZW5lcmF0b3IuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFhO0VBQ2IsV0FBVztFQUNYLGFBQWEsRUFBQTs7QUFHakI7RUFDSSxZQUFZO0VBQ1osVUFBVSxFQUFBOztBQUdkO0VBQ0ksY0FBYztFQUNkLFVBQVUsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2dlbmVyYXRvci9nZW5lcmF0b3IuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZ2VuZXJhdG9yIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHBhZGRpbmc6IDEwcHQ7XHJcbn1cclxuXHJcbnN3YXRjaC1yb3cge1xyXG4gICAgbWFyZ2luOiBhdXRvO1xyXG4gICAgd2lkdGg6IDg1JTtcclxufVxyXG5cclxuY29sb3ItcGlja2VyIHtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgei1pbmRleDogMTtcclxufVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/generator/generator.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/generator/generator.component.ts ***!
+  \**************************************************/
+/*! exports provided: GeneratorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GeneratorComponent", function() { return GeneratorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var ngx_color_picker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-color-picker */ "./node_modules/ngx-color-picker/dist/ngx-color-picker.es5.js");
+/* harmony import */ var _colorutil__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../colorutil */ "./src/app/colorutil.ts");
+/* harmony import */ var _convert_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../convert.service */ "./src/app/convert.service.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var GeneratorComponent = /** @class */ (function () {
+    function GeneratorComponent(cp, cs) {
+        this.cp = cp;
+        this.cs = cs;
+        this.dark_primary_text = _colorutil__WEBPACK_IMPORTED_MODULE_2__["dark_primary_text"];
+        this.light_primary_text = _colorutil__WEBPACK_IMPORTED_MODULE_2__["light_primary_text"];
+        this.contrast_default = _colorutil__WEBPACK_IMPORTED_MODULE_2__["contrast_default"];
+        this.color = _colorutil__WEBPACK_IMPORTED_MODULE_2__["generator_default"];
+        this.colorObject = {
+            metadata: {
+                title: 'Custom Color'
+            },
+            C50: this.brightenColor(this.color, 5),
+            C100: this.brightenColor(this.color, 4),
+            C200: this.brightenColor(this.color, 3),
+            C300: this.brightenColor(this.color, 2),
+            C400: this.brightenColor(this.color, 1),
+            C500: this.color,
+            C600: this.darkenColor(this.color, 1),
+            C700: this.darkenColor(this.color, 2),
+            C800: this.darkenColor(this.color, 3),
+            C900: this.darkenColor(this.color, 4),
+            contrast: this.contrast_default
+        };
+    }
+    GeneratorComponent.prototype.ngOnInit = function () {
+    };
+    GeneratorComponent.prototype.onColorPickerChange = function (color) {
+        var c50 = this.brightenColor(color, 5);
+        var c100 = this.brightenColor(color, 4);
+        var c200 = this.brightenColor(color, 3);
+        var c300 = this.brightenColor(color, 2);
+        var c400 = this.brightenColor(color, 1);
+        var c500 = color;
+        var c600 = this.darkenColor(color, 1);
+        var c700 = this.darkenColor(color, 2);
+        var c800 = this.darkenColor(color, 3);
+        var c900 = this.darkenColor(color, 4);
+        this.color = c500;
+        this.colorObject = {
+            metadata: {
+                title: 'Custom Color'
+            },
+            C50: c50,
+            C100: c100,
+            C200: c200,
+            C300: c300,
+            C400: c400,
+            C500: c500,
+            C600: c600,
+            C700: c700,
+            C800: c800,
+            C900: c900,
+            contrast: this.generateContrast({
+                C50: c50,
+                C100: c100,
+                C200: c200,
+                C300: c300,
+                C400: c400,
+                C500: c500,
+                C600: c600,
+                C700: c700,
+                C800: c800,
+                C900: c900,
+            })
+        };
+    };
+    GeneratorComponent.prototype.generateContrast = function (color) {
+        return {
+            C50: this.getContrastColor(color["C50"]),
+            C100: this.getContrastColor(color["C100"]),
+            C200: this.getContrastColor(color["C200"]),
+            C300: this.getContrastColor(color["C300"]),
+            C400: this.getContrastColor(color["C400"]),
+            C500: this.getContrastColor(color["C500"]),
+            C600: this.getContrastColor(color["C600"]),
+            C700: this.getContrastColor(color["C700"]),
+            C800: this.getContrastColor(color["C800"]),
+            C900: this.getContrastColor(color["C900"]),
+        };
+    };
+    GeneratorComponent.prototype.getContrastColor = function (color) {
+        var h = (color.charAt(0) == "#") ? color.substring(1, 7) : color;
+        var r = parseInt(h.substring(0, 2), 16);
+        var g = parseInt(h.substring(2, 4), 16);
+        var b = parseInt(h.substring(4, 6), 16);
+        var avg = (r + g + b) / 3;
+        if (avg <= 127)
+            return this.light_primary_text;
+        else
+            return this.dark_primary_text;
+    };
+    GeneratorComponent.prototype.brightenColor = function (color, weight) {
+        var h = (color.charAt(0) == "#") ? color.substring(1, 7) : color;
+        var r = parseInt(h.substring(0, 2), 16);
+        var g = parseInt(h.substring(2, 4), 16);
+        var b = parseInt(h.substring(4, 6), 16);
+        for (var i = 0; i < weight; i++) {
+            r += r * .15;
+            g += g * .15;
+            b += b * .15;
+        }
+        return "#" + this.cs.convertToHex(r) + this.cs.convertToHex(g) + this.cs.convertToHex(b);
+    };
+    GeneratorComponent.prototype.darkenColor = function (color, weight) {
+        var h = (color.charAt(0) == "#") ? color.substring(1, 7) : color;
+        var r = parseInt(h.substring(0, 2), 16);
+        var g = parseInt(h.substring(2, 4), 16);
+        var b = parseInt(h.substring(4, 6), 16);
+        for (var i = 0; i < weight; i++) {
+            r -= r * .20;
+            g -= g * .20;
+            b -= b * .20;
+        }
+        return "#" + this.cs.convertToHex(r) + this.cs.convertToHex(g) + this.cs.convertToHex(b);
+    };
+    GeneratorComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-generator',
+            template: __webpack_require__(/*! ./generator.component.html */ "./src/app/generator/generator.component.html"),
+            styles: [__webpack_require__(/*! ./generator.component.scss */ "./src/app/generator/generator.component.scss")]
+        }),
+        __metadata("design:paramtypes", [ngx_color_picker__WEBPACK_IMPORTED_MODULE_1__["ColorPickerService"], _convert_service__WEBPACK_IMPORTED_MODULE_3__["ConvertService"]])
+    ], GeneratorComponent);
+    return GeneratorComponent;
 }());
 
 
