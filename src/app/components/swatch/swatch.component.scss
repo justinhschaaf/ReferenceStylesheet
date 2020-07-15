@@ -1,0 +1,42 @@
+@import '../../../vars';
+
+.swatch {
+
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    //width: 100%;
+    padding: 12pt;
+    margin: auto;
+    //max-width: 480pt;
+
+    //margin-top: 8pt;
+    //margin-bottom: 8pt;
+
+    background-color: $color-light;
+    box-shadow: $shadow;
+
+    .swatch-header {
+
+        width: 100%;
+        padding: 0 0 12pt 0;
+        text-align: center;
+
+    }
+
+    .swatch-sample {
+
+        padding: 4pt;
+        margin: 4pt auto;
+        min-width: 80pt;
+        width: 28%;
+        min-height: 120pt;
+
+        font-size: 10pt;
+
+    }
+
+}

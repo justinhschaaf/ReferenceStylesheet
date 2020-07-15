@@ -1,0 +1,20 @@
+.collections {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    justify-items: left;
+
+    .collection {
+
+        width: 40%;
+        max-width: 320pt;
+        min-height: 96pt;
+        cursor: pointer;
+
+    }
+
+}

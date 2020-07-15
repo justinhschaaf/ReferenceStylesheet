@@ -1,171 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
 
-/* https://stackoverflow.com/questions/5445491/height-equal-to-dynamic-width-css-fluid-layout#6615994 */
-/*#container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-}
-
-#dummy {
-  margin-top: 75%;
-}
-
-.colorbox {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: silver
-}*/
-
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Overpass|Rubik|Merriweather');
-@import url('https://content.justinschaaf.com/common/fonts/fonts.css');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Overpass');
+@import './vars';
 
 * {
-  margin: 0;
-  font-family: 'Overpass', 'Segoe UI Emoji', sans-serif;
+    margin: 0;
+    font-family: 'Overpass', 'Segoe UI Emoji', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Major Mono Display', 'Segoe UI Emoji', monospace;
+    font-family: 'Major Mono Display', 'Segoe UI Emoji', monospace;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
 }
 
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16pt 16pt 0pt 16pt;
+.color-picker {
+
+    border: none !important;
+
 }
 
-.title {
-  text-align: center;
-  font-size: 48pt;
-  color: #111111;
-}
-
-.heading-desc {
-  text-align: center;
-  font-size: 14pt;
-}
-
-.buttons {
-  margin: 10pt;
-}
+// Button
 
 button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10pt;
-  background-color: #111111;
-  color: #ffffff;
-  font-weight: bold;
-  border: 0;
-  box-shadow: 0pt 2pt 5pt rgba(20, 20, 20, 0.4);
-}
 
-.links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+    margin: 8pt auto;
+    padding: 8pt;
+    max-width: 160pt;
+    width: 50%;
+    min-width: 80pt;
 
-.link {
-  width: 200pt;
-  padding: 5pt;
-  color: #111111;
-  font-weight: bold;
-  text-align: center;
-}
+    background-color: $color-light;
+    box-shadow: $shadow;
 
-.footer-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.textbanner {
-  padding: 5pt 5%;
-  text-align: center;
-}
-
-.spoiler_container {
-
-  display: flex;
-  flex-wrap: wrap;
-
-  h2 {
-    width: 60%;
-  }
-
-  .spoilerbutton {
-    width: 30%;
-    background-color: #f2f2f2;
     border: none;
-  }
-
-  .spoiler {
-    width: 100%;
-  }
 
 }
 
-// Animated spoiler CSS based on Bloggersentral.com -- http://www.bloggersentral.com/2013/03/content-spoiler-with-simple-css3.html
-.spoilerbutton {
-  display: block;
+// Card and Hoverable from justinschaaf.com
+
+.card {
+
+    margin: 16pt auto;
+    padding: 16pt;
+    max-width: 30%;
+    min-width: 192pt;
+    //height: 380pt;
+
+    background-color: $color-light;
+    box-shadow: $shadow;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+
+    .card-start {
+        justify-self: flex-start;
+        margin: 0 auto auto auto;
+    }
+
+    .card-content {
+        justify-self: center;
+        text-align: left;
+        margin: auto;
+    }
+
+    .card-end {
+        justify-self: flex-end;
+        margin: auto auto 0 auto;
+    }
+
 }
 
-.spoiler {
-  overflow: hidden;
-  background: #f2f2f2;
-  z-index: -1;
+.hoverable {
+    transition: $transition-time;
 }
 
-.spoiler > div {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: margin 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: margin 0.2s ease;
-}
+.hoverable:hover {
 
-.spoilerbutton[value="Show"] + .spoiler > div {
-  margin-top: -1000%;
-}
+    animation-name: hover;
+    animation-duration: $transition-time;
 
-.spoilerbutton[value="Hide"] + .spoiler {
-
-  padding: 8pt;
-
-  h2 {
-    width: 90%;
-  }
+    transform: translateY(-16pt);
+    //padding: 20pt !important;
+    box-shadow: $shadow-hover !important;
 
 }
 
-// End Spoiler
+// References used to learn how to do these animations:
+// http://www.inwebson.com/css3/nifty-hover-effects-with-css3-animations/
+// https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations 
+@keyframes hover {
 
-.pt {
-  h3, p {
-    font-family: 'Rubik', 'Segoe UI Emoji', sans-serif; 
-  }
-}
+    from {
+        transform: translateY(0pt);
+        //padding: 16pt !important;
+        box-shadow: $shadow !important;
+    }
+  
+    to {
+        transform: translateY(-16pt);
+        //padding: 20pt !important;
+        box-shadow: $shadow-hover !important;
+    }
 
-.tv {
-  h3 {
-    font-family: 'Vanilla', 'Segoe UI Emoji', sans-serif;
-  }
-  p {
-    font-family: 'Merriweather', 'Segoe UI Emoji', sans-serif;
-  }
-}
-
-.generator_container {
-  margin: 0 0 16pt 0;
 }

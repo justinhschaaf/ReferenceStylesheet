@@ -1,10 +1,23 @@
-# ReferenceStylesheet
-A reference stylesheet of the fonts and colors I used for my projects.
+![colors.justinschaaf.com logo](https://content.justinschaaf.com/common/logos/js-stylesheet128.png)
 
-# Donate
+# [colors.justinschaaf.com](https://colors.justinschaaf.com)
+A reference stylesheet of the colors I used for my projects.
+
+## Donate
 If you like what I do, then please consider supporting me on Liberapay.
 
 [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/justinhschaaf) 
+
+## How does this work?
+
+The website pulls all of the colors from a [JSON file stored on a static website](https://content.justinschaaf.com/common/colors/colors.json) and generates the pages and swatches as the file specifies.
+
+## Pro Tips
+
+- You can share a color from the color swatch generator with the link `https://colors.justinschaaf.com/g/{COLOR}`, with `{COLOR}` being replaced
+with the color you want to share (e.g. [`https://colors.justinschaaf.com/g/446688`](https://colors.justinschaaf.com/g/446688)).
+
+---
 
 # Angular Reference
 

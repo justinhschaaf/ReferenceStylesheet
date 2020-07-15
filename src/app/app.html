@@ -1,144 +1,50 @@
 
 <div class="header" id="header">
 
-  <img class="logo" src="https://content.justinschaaf.com/common/logos/js-stylesheet512.png" height="128" width="128">
+    <img class="logo" src="https://content.justinschaaf.com/common/logos/js-stylesheet512.png" height="128" width="128" routerLink="/">
 
-  <h1 class="title">Justin's Reference Stylesheet</h1>
-  <p class="heading-desc">
-    This is a color palette with 300+ different colors and a few fonts from my various projects or
-    just colors that look nice. Feel free to use any of them. A link back here would be appreciated 😊.
-  </p>
+    <h1 class="title">Justin's Reference Stylesheet</h1>
+    <p class="heading-desc">
+        This is a color palette with a wide range of different colors from my various projects or
+        just colors that look nice. Feel free to use any of them. A link back here would be appreciated 😊.
+    </p>
 
-  <br>
+    <br>
   
 </div>
 
-<router-outlet></router-outlet>
-
-<div class="spoiler_container">
-  <h2 class="textbanner" [style.background-color]="ptcolors[0].C500" [style.color]="ptcolors[0].contrast.C500">Pinetree</h2>
-  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
-  <div class="spoiler">
-    <div>
-
-        <h2>Font - Rubik</h2>
-  
-        <font-specimen class="pt"></font-specimen>
-  
-        <h2>Colors</h2>
-  
-        <br>
-  
-      <swatch-row *ngFor="let ptcolor of ptcolors; index as i" [color]="ptcolor"></swatch-row>
-    </div>
-  </div>
-</div>
-
-<div class="spoiler_container">
-  <h2 class="textbanner" [style.background-color]="jscolors[0].C500" [style.color]="jscolors[0].contrast.C500">Js</h2>
-  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
-  <div class="spoiler">
-    <div>
-
-      <h2>Fonts - Major Mono Display / Overpass</h2>
-
-      <font-specimen class="js"></font-specimen>
-
-      <h2>Colors</h2>
-
-      <br>
-
-      <swatch-row *ngFor="let jscolor of jscolors; index as i" [color]="jscolor"></swatch-row>
-
-    </div>
-  </div>
-</div>
-
-<div class="spoiler_container">
-  <h2 class="textbanner" [style.background-color]="othercolors[0].C500" [style.color]="othercolors[0].contrast.C500">Retired Projects</h2>
-  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
-  <div class="spoiler">
-    <div>
-
-      <h2>TV Fonts - Vanilla / Merriweather</h2>
-
-      <font-specimen class="tv"></font-specimen>
-
-      <h2>Colors</h2>
-
-      <br>
-      
-      <swatch-row *ngFor="let othercolor of othercolors; index as i" [color]="othercolor"></swatch-row>
-    </div>
-  </div>
-</div>
-
-<div class="spoiler_container">
-  <h2 class="textbanner" [style.background-color]="greycolors[0].C500" [style.color]="greycolors[0].contrast.C500">Greyscale Colors</h2>
-  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
-  <div class="spoiler">
-    <div>
-      <swatch-row *ngFor="let greycolor of greycolors; index as i" [color]="greycolor"></swatch-row>
-    </div>
-  </div>
-</div>
-
-<div class="spoiler_container">
-  <h2 class="textbanner" [style.background-color]="brightcolors[0].C500" [style.color]="brightcolors[0].contrast.C500">Bright Colors</h2>
-  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
-  <div class="spoiler">
-    <div>
-      <swatch-row *ngFor="let brightcolor of brightcolors; index as i" [color]="brightcolor"></swatch-row>
-    </div>
-  </div>
-</div>
-
-<div class="spoiler_container">
-  <h2 class="textbanner" [style.background-color]="darkcolors[0].C500" [style.color]="darkcolors[0].contrast.C500">Dark Colors</h2>
-  <input class="spoilerbutton" type="button" value="Show" onclick="this.value=this.value=='Show'?'Hide':'Show';">
-  <div class="spoiler">
-    <div>
-      <swatch-row *ngFor="let darkcolor of darkcolors; index as i" [color]="darkcolor"></swatch-row>
-    </div>
-  </div>
-</div>
-
-<div class="generator_container">
-
-  <h2 class="textbanner" [style.background-color]="generator_default" style.color="#ffffff">Swatch Generator</h2>
-  
-  <app-generator></app-generator>
-  
-</div>
+<main class="content">
+    <router-outlet></router-outlet>
+</main>
 
 <div class="footer" id="footer">
 
-  <br>
+    <br>
 
-  <div class="links">
-    
-    <div class="link">
-      <a href="https://www.github.com/justinhschaaf/ColorFormatter" class="footer-link">Color Formatting Tool</a>
+    <div class="links">
+        
+        <!--<div class="link">
+            <a href="https://www.github.com/justinhschaaf/ColorFormatter" class="footer-link">Color Formatting Tool</a>
+        </div>-->
+
+        <div class="link">
+            <a href="https://www.github.com/justinhschaaf/ReferenceStylesheet" class="footer-link">Source</a>
+        </div>
+
+        <!--<div class="link">
+            <a href="#header" class="footer-link">TOP</a>
+        </div>-->
+
+        <div class="link">
+            <a href="https://justinschaaf.com" class="footer-link">Main Site</a>
+        </div>
+
+        <div class="link">
+            <a href="https://liberapay.com/justinhschaaf" class="footer-link">Donate</a>
+        </div>
+
     </div>
 
-    <div class="link">
-      <a href="https://www.github.com/justinhschaaf/ReferenceStylesheet" class="footer-link">Source</a>
-    </div>
-
-    <div class="link">
-      <a href="#header" class="footer-link">TOP</a>
-    </div>
-
-    <div class="link">
-      <a href="https://justinschaaf.com" class="footer-link">Main Site</a>
-    </div>
-
-    <div class="link">
-      <a href="https://liberapay.com/justinhschaaf" class="footer-link">Donate</a>
-    </div>
-
-  </div>
-
-  <br>
+    <br>
 
 </div>

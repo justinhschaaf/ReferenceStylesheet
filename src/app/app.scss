@@ -1,0 +1,71 @@
+
+// Heading
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16pt 16pt 0pt 16pt;
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+}
+
+.heading-desc {
+    text-align: center;
+    font-size: 14pt;
+    max-width: 720pt;
+    margin: auto;
+}
+
+// General
+
+.content {
+
+    max-width: 720pt; // 720pt
+    margin: auto;
+    padding: 8pt 5%;
+
+}
+
+.buttons {
+    margin: 10pt;
+}
+
+.textbanner {
+    padding: 5pt 5%;
+    text-align: center;
+}
+
+// Footer
+
+.links {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    max-width: 720pt;
+    margin: auto;
+    padding: 8pt 5%;
+
+    .link {
+
+        max-width: 200pt;
+        padding: 8pt;
+        margin: auto;
+
+        color: #000000;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+}

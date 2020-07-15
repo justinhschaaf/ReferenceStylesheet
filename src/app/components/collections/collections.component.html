@@ -1,0 +1,13 @@
+<div class="collections">
+
+    <div class="card hoverable collection" *ngFor="let id of colorIds; index as i" [style.background-color]="util.getFeaturedColor(colors[id])" [style.color]="cs.getContrastColor(util.getFeaturedColor(colors[id]))" [routerLink]="id">
+
+        <h2>{{ (colors[id]["name"] != undefined) ? colors[id]["name"] : util.idToName(id) }}</h2>
+
+        <!--<button class="button hoverable" [routerLink]="id" [style.background-color]="util.getFeaturedColor(colors[id])" [style.color]="cs.getContrastColor(util.getFeaturedColor(colors[id]))">
+            See Colors
+        </button>-->
+
+    </div>
+
+</div>

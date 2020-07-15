@@ -1,0 +1,52 @@
+@import '../../../vars';
+
+.collection-header {
+    text-align: center;
+    padding: 16pt;
+}
+
+.colors {
+
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    color-picker {
+
+        margin: 0 auto;
+        z-index: 1;
+
+    }
+
+    .generator {
+
+        max-width: 480pt;
+        width: 45%;
+        min-width: 180pt;
+
+        padding: 12pt;
+        margin: 16pt auto;
+
+        // Flexbox fixes all, except when it doesn't
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+
+    }
+
+    .color-swatch {
+
+        max-width: 480pt;
+        width: 45%;
+        min-width: 180pt;
+        margin: 16pt auto;
+
+    }
+
+}

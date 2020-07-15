@@ -1,0 +1,35 @@
+<div class="hoverable swatch" [id]="id">
+
+    <h2 class="swatch-header">{{ objectColor ? (color["name"] != undefined ? color["name"] : util.idToName(id)) : util.idToName(id) }}</h2>
+
+    <div class="card swatch-sample" [style.background-color]="light" [style.color]="cs.getContrastColor(light)">
+    
+        <h4>L</h4>
+
+        <p>{{ light.toUpperCase() }}</p>
+        <p>{{ cs.convertToRGB(light) }}</p>
+        <p>{{ cs.convertToCMYK(light) }}</p>
+
+    </div>
+    
+    <div class="card swatch-sample" [style.background-color]="base" [style.color]="cs.getContrastColor(base)">
+    
+        <h4>B</h4>
+    
+        <p>{{ base.toUpperCase() }}</p>
+        <p>{{ cs.convertToRGB(base) }}</p>
+        <p>{{ cs.convertToCMYK(base) }}</p>
+    
+    </div>
+    
+    <div class="card swatch-sample" [style.background-color]="dark" [style.color]="cs.getContrastColor(dark)">
+    
+        <h4>D</h4>
+    
+        <p>{{ dark.toUpperCase() }}</p>
+        <p>{{ cs.convertToRGB(dark) }}</p>
+        <p>{{ cs.convertToCMYK(dark) }}</p>
+    
+    </div>
+
+</div>

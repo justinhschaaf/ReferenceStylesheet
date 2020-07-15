@@ -1,29 +1,27 @@
 import { Component } from '@angular/core';
-import { 
-  ptcolors, 
-  jscolors, 
-  othercolors, 
-  greycolors, 
-  brightcolors, 
-  darkcolors, 
-  generator_default 
-} from './colorutil';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.html',
-  styleUrls: ['./app.scss']
+    selector: 'jss-root',
+    templateUrl: './app.html',
+    styleUrls: ['./app.scss']
 })
 export class AppComponent {
 
-  ptcolors = ptcolors;
-  jscolors = jscolors;
-  othercolors = othercolors;
-  greycolors = greycolors;
-  brightcolors = brightcolors;
-  darkcolors = darkcolors;
-  generator_default = generator_default;
+    constructor(
+        private route: ActivatedRoute
+    ) {}
 
-  constructor() {}
+    ngOnInit() {
+
+        var colors = this;
+
+        // Demonstrates getting query params -- keep for future reference
+        /*this.route.queryParamMap.subscribe(params => {
+            var colorgen = params['params']['colorgen'];
+            if (colorgen != undefined) colors.generator_default = '#' + colorgen;
+        });*/
+
+    }
 
 }

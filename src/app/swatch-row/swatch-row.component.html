@@ -1,7 +1,0 @@
-<div class="swatch-header" [id]="(color.metadata.title).replace(' ', '').replace(' ', '').replace(' ', '')" [style.background-color]="color.C500">
-  <h1 [style.color]="color.contrast.C500">{{ color.metadata.title }}</h1>
-</div>
-
-<div class="swatch-row">
-  <swatch *ngFor="let type of colortypes" [type]="type" [color]="color[type]" [contrast]="color.contrast[type]"></swatch>
-</div>

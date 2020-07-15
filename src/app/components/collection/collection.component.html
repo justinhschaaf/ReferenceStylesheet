@@ -1,0 +1,24 @@
+<h2 class="collection-header">{{ name }}</h2>
+
+<div class="colors">
+
+    <div class="card hoverable color-swatch generator" *ngIf="collection['generator'] == true">
+
+        <span
+            [style.background]="genColor"
+            [cpToggle]="true"
+            [cpDialogDisplay]="'inline'"
+            [cpCancelButton]="true"
+            [cpCancelButtonClass]="'hoverable'"
+            [cpAlphaChannel]="'disabled'"
+            (colorPickerChange)="onColorPickerChange($event)"
+            [(colorPicker)]="genColor"
+        ></span>
+
+    </div>
+
+    <jss-swatch class="color-swatch" *ngIf="collection['generator'] == true" id="custom_color" [color]="genColor"></jss-swatch>
+
+    <jss-swatch class="color-swatch" *ngFor="let key of colorKeys; index as i" [id]="key" [color]="colors[key]"></jss-swatch>
+
+</div>
