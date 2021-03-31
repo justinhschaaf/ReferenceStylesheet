@@ -1120,7 +1120,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       function ColorService() {
         _classCallCheck(this, ColorService);
 
-        this.colorLoc = "https://content.justinschaaf.com/common/colors/colors.json"; // /assets/colors.json
+        this.colorLoc = "https://content.justinschaaf.com/common/config/colors.json"; // /assets/colors.json
       }
       /*
        * Color Changing (Brighten/Darken)

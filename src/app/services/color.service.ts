@@ -5,7 +5,7 @@ import { Injectable, SystemJsNgModuleLoader } from '@angular/core';
 })
 export class ColorService {
 
-    public colorLoc: string = "https://content.justinschaaf.com/common/colors/colors.json"; // /assets/colors.json
+    public colorLoc: string = "https://content.justinschaaf.com/common/config/colors.json"; // /assets/colors.json
 
     constructor() { }
 

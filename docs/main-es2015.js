@@ -581,7 +581,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class ColorService {
     constructor() {
-        this.colorLoc = "https://content.justinschaaf.com/common/colors/colors.json"; // /assets/colors.json
+        this.colorLoc = "https://content.justinschaaf.com/common/config/colors.json"; // /assets/colors.json
     }
     /*
      * Color Changing (Brighten/Darken)
